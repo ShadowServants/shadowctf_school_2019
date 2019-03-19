@@ -1,2 +1,4 @@
-# shadowctf_school_2018
+# Shadow CTF School 2019
 Делаем таски, хороним ucucug'у
+Формат флага — shadowctf{abacaba}
+Таски добавляем в трелло и рассовываем по папочкам по категориям
