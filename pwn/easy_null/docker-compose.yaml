@@ -1,0 +1,14 @@
+version: '2'
+services:
+  task_nb:
+    restart: unless-stopped
+    environment:
+    - SECRET=ahahahhaphahahnesegodnya
+    - FLAG=shadow{w0w_y0u_pwned_our_syst3m}
+    build: .
+    ports:
+    - "7777:7777"
+    command: socat -T20 TCP-LISTEN:7777,reuseaddr,fork,ignoreeof EXEC:"./app"
+    mem_limit: 512m
+    mem_reservation: 128m
+
