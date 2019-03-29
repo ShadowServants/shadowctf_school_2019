@@ -34,7 +34,9 @@ class Encryptor(object):
 
 
 e = Encryptor()
-encrypted = e.encrypt("Я ебал меня сосали")
+text = open("text.txt").read()
+text = text.lower()
+encrypted = e.encrypt(text)
 decrypted = e.decrypt(encrypted)
 assert encrypted == decrypted
 print(encrypted)
