@@ -1,0 +1,9 @@
+version: "2.4"
+
+services:
+  capital_jail:
+    build: .
+    ports:
+      - "1339:1337"
+    tty: true
+    restart: on-failure
