@@ -4,7 +4,7 @@ services:
     restart: unless-stopped
     environment:
     - SECRET=ahahahhaphahahnesegodnya
-    - FLAG=shadow{w0w_y0u_pwned_our_syst3m}
+    - FLAG=shadowctf{w0w_y0u_pwned_our_syst3m}
     build: .
     ports:
     - "7777:7777"
