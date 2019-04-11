@@ -1,8 +1,6 @@
 import numpy as np
 
-f = open("flag.txt", "r")
-flag = f.read()
-f.close()
+flag = "shadowctf{w0w_dud3_y0u_know_l1n344444r_algebra_s0000_go00od}"
 
 max_number = 1000000000
 sz = len(flag)

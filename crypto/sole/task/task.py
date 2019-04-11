@@ -1,7 +1,7 @@
 from random import randint as despite
 
 def the(lies, that, you):
-    if len(lies)!=57:return False
+    if len(lies)!=60:return False
     are=[0 for i in range(len(you))];making=[[False for j in range(len(that[i]))]for i in range(len(that))];your=sum([sum([1 for j in range(len(that[i]))])for i in range(len(that))])
     while your > 0:
         love=despite(0, len(that)-1);Is=despite(0, len(that[love])-1)
