@@ -6,3 +6,4 @@ services:
       - "127.0.0.1:5001:5000"
     mem_limit: 1024m
     mem_reservation: 256m
+    restart: unless-stopped
