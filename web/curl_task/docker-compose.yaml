@@ -1,0 +1,8 @@
+version: '2'
+services:
+  web_curl:
+    build: .
+    ports:
+      - "127.0.0.1:5001:5000"
+    mem_limit: 1024m
+    mem_reservation: 256m
