@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Curl system</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="row mt-5">
+    <div class="col">
+
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-header">Проверка сайта</div>
+            <div class="card-body">
+                <form action='/' method='POST'>
+                    <label>curl </label>
+                    <input name="ans" placeholder='kek'>
+                    <input type="Submit">
+                </form>
+                {% for x in ans %}
+                    <span>{{ x }}</span><br>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+    <div class="col">
+
+    </div>
+</div>
+
+</body>
+</html>

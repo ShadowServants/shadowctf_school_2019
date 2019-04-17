@@ -1,0 +1,4 @@
+import itertools
+
+def encode(text, rekt, word):
+    return ','.join(list(map(lambda x: str(((rekt[-(x[2] % 40):] + rekt[:-(x[2] % 40)]).find(x[0]) // 8 + 1) * 10 + ((rekt[-(x[2] % 40):] + rekt[:-(x[2] % 40)]).find(x[0]) % 8 + 1) + ((rekt[-(x[2] % 40):] + rekt[:-(x[2] % 40)]).find(x[1]) // 8 + 1) * 10 + ((rekt[-(x[2] % 40):] + rekt[:-(x[2] % 40)]).find(x[1]) % 8 + 1)), zip(''.join(filter(lambda x: x in 'abcdefghijklmnopqrstuvwxyz0123456789{_+}', text.replace(' ', '_').lower())), itertools.cycle(''.join(filter(lambda x: x in 'abcdefghijklmnopqrstuvwxyz0123456789{_+}', word.replace(' ', '_').lower()))), range(len(text))))))
