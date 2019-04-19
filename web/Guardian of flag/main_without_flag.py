@@ -7,7 +7,7 @@ import json
 from base64 import b64encode, b64decode
 
 app = Flask(__name__)
-app.secret_key = 'cf06d47a7147ae759a99af1c75164cb2'  # 32 bytes
+app.secret_key = ''  # 32 bytes
 
 conn = sqlite3.connect('db.sqlite3', check_same_thread=False)
 c = conn.cursor()
@@ -334,7 +334,7 @@ def get_flag():
         return render_template(
             'getflag.html',
             data={'valid': True,
-                  'flag': 'shadowctf{D0nt_Us3_s3cret_KeY_in_X0R}'
+                  'flag': ''
                   })
     else:
         data['status'] = 'Invalid guardian password. Login again'
