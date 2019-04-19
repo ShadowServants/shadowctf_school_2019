@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content_title %}
+<p class="font-weight-bold">Main page</p>
+{% endblock %}
+
+{% block content %}
+{% if data.username %}
+<p>Hello, <span class="font-weight-bold">{{ data.username }}</span></p>
+{% if not data.guardian %}
+<p>You can <a href="/users/change_password">change password</a></p>
+{% endif %}
+{% if data.admin %}
+<p><a href="/admin">Administration panel</a></p>
+{% endif %}
+{% if data.guardian %}
+<p><a href="/get_flag">Get flag</a></p>
+{% endif %}
+<p><a href="/logout">Logout</a></p>
+{% else %}
+<a href="/login">Login</a><br>
+<a href="/register">Register</a>
+{% endif %}
+{% endblock %}

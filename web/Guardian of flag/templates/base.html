@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="google-site-verification" content="hIs0O6H6le2ExJB1aObRS5U8s0gNoKCAA5u6PJ30fA0" />
+        <meta name="author" content="">
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <title>Guardian</title>
+    </head>
+    <body style="background-color: black">
+        <div class="vertical-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div align="center" class="card bg-dark text-white">
+                            <div class="card-header">
+                                {% block content_title %}{% endblock %}
+                            </div>
+                            <div class="card-body">
+                                {% block content %}{% endblock %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
