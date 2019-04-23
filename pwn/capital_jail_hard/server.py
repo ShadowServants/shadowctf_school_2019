@@ -6,7 +6,7 @@ print('Welcome to Capital Jail!')
 print('Can you escape?')
 
 banned = '_,' + string.digits
-MAX_LEN = 10000
+MAX_LEN = 3000
 MAX_LETTERS_IN_ROW = 7
 
 print(f'Max sploit length: {MAX_LEN}')
@@ -40,7 +40,6 @@ while True:
             if count_letters > MAX_LETTERS_IN_ROW:
                 raise ValueError('To many letters in a row')
 
-        print(inp)
         print(eval(inp))
     except _base_exception as e:
         print(f'Error! {e}')
