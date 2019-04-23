@@ -1,4 +1,4 @@
-from flask import Flask, request, session
+from flask import Flask, request, session, url_for
 from flask import render_template, redirect
 import sqlite3
 import sys
@@ -25,7 +25,7 @@ def admin_required(username, user=''):
     if username is None:
         return {'status': 'invalid cookie'}
     if not sql_user_is_admin(username):
-        return ({'status': 'permission denied, you must be admin'})
+        return {'status': 'permission denied, you must be admin'}
     return None
 
 
@@ -56,7 +56,7 @@ def sql_deactivate_user(username: str):
         c.execute('UPDATE users SET isactive=0 WHERE username=?', (username, ))
         conn.commit()
         return None
-    except Exception as e:
+    except sqlite3.Error as e:
         return 'error, try later'
 
 
@@ -65,7 +65,7 @@ def sql_give_admin(username: str):
         c.execute('UPDATE users SET status="a" WHERE username=?', (username, ))
         conn.commit()
         return None
-    except Exception as e:
+    except sqlite3.Error as e:
         return 'error, try later'
 
 
@@ -86,10 +86,10 @@ def sql_get_passhash_by_username(username: str):
     return passhash[0]
 
 
-def sql_login(login, password):
+def sql_login(username, password):
     passhash = sha256(password.encode()).hexdigest()
     data = c.execute('SELECT username, isactive FROM users WHERE username=? AND (passhash=? OR isactive=0)',
-                     (login, passhash)).fetchone()
+                     (username, passhash)).fetchone()
     if data is not None:
         if data[1] == 0:
             return ''
@@ -104,41 +104,36 @@ def sql_change_password(username, password):
         c.execute('UPDATE users SET passhash=?, isactive=1 WHERE username=?', (passhash, username))
         conn.commit()
         return 'ok'
-    except Exception as e:
+    except sqlite3.Error as e:
         return 'error, try later'
 
 
-def sql_register(login, password):
+def sql_register(username, password):
     passhash = sha256(password.encode()).hexdigest()
     try:
-        c.execute('INSERT INTO users VALUES (?, ?, "u", 1)', (login, passhash))
+        c.execute('INSERT INTO users VALUES (?, ?, "u", 1)', (username, passhash))
         conn.commit()
         status = 'ok'
-    except Exception as e:
+    except sqlite3.Error as e:
         status = 'username was already taken'
     return status
 
 
 def generate_link(username):
-    if len(sys.argv) > 1:
-        link = sys.argv[1] + ":" + request.host.split(':')[-1]
-    else:
-        link = 'localhost:' + request.host.split(':')[-1]
     userhash = username + sql_get_passhash_by_username(username)
     userhash = md5(userhash.encode()).hexdigest()
     recover = b''
     for i in range(len(userhash)):
         recover += (chr(ord(userhash[i]) ^ ord(app.secret_key[i]))).encode()
     recover = b64encode(recover + b'\x00').decode()
-
-    link += '/users/{username}/{recover}'.format(username=username, recover=recover)
+    link = request.host + url_for('recover_password', username=username, recover=recover)
+    print(link)
     return link
 
 
 @app.route('/', methods=['GET'])
 def index():
-    data = {}
-    data['username'] = session.get('session')
+    data = {'username': session.get('session')}
     if sql_user_is_admin(data['username']):
         data['admin'] = True
     is_guardian = sql_user_is_guardian(data['username'])
@@ -148,7 +143,7 @@ def index():
 
 
 @app.route('/login', methods=['GET', 'POST'])
-def login():
+def login_user():
     data = {}
     if request.method == 'GET':
         return render_template('login.html', data=data)
@@ -170,8 +165,7 @@ def login():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    data = {}
-    data['status'] = ''
+    data = {'status': ''}
     if request.method == 'GET':
         return render_template('register.html', data=data)
     else:
@@ -202,7 +196,7 @@ def change_password():
 
 
 @app.route('/users/<username>/<recover>', methods=['GET', 'POST'])
-def recover(username, recover):
+def recover_password(username, recover):
     data = {}
     if request.method == 'GET':
         return render_template('changepass.html', data=data)
@@ -249,7 +243,7 @@ def give_admin():
         return render_template('admin.html', data=data)
 
     sql_give_admin(user)
-    data['responce'] = 'ok'
+    data['response'] = 'ok'
     return render_template('admin.html', data=data)
 
 
@@ -296,7 +290,7 @@ def deactivate_user():
     if status:
         data['status'] = status
     else:
-        data['responce'] = 'ok'
+        data['response'] = 'ok'
     return render_template('admin.html', data=data)
 
 
@@ -315,7 +309,7 @@ def activate_user():
     if status is not None:
         return status
     link = generate_link(user)
-    data['responce'] = link
+    data['response'] = link
     return render_template('admin.html', data=data)
 
 
@@ -345,5 +339,5 @@ def get_flag():
 # def static(name):
 #     return url_for('static', name)
 
-
-app.run(host='0.0.0.0', port=5001)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
