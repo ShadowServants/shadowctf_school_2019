@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import string
+import subprocess
+import sys
 
 print('Welcome to Capital Jail!')
 print('Can you escape?')
@@ -18,8 +20,11 @@ for key in keys:
     if key[0].isalpha() and key[0].upper() == key[0]:
         del __builtins__.__dict__[key]
 
+# remove warning of unused module
+_ = subprocess
 del __builtins__.__dict__['open']
 del __import__("os").__dict__['system']
+del sys.modules['subprocess']
 
 
 while True:
@@ -42,4 +47,6 @@ while True:
 
         print(eval(inp))
     except _base_exception as e:
+        if 'EOF' in str(e):
+            break
         print(f'Error! {e}')
