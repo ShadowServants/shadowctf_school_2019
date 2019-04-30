@@ -1,0 +1,21 @@
+version: '2'
+services:
+  server:
+    build: .
+    command: "gunicorn --worker-class gevent --worker-connections 768 --bind 0.0.0.0:5000 app:app"
+    ports:
+      - 5000:5000
+  mongo:
+    image: mongo:latest
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/db:/data/db
+
+    command: "mongod --logpath=/dev/null "
+  redis:
+    image: redis:alpine
+  celery:
+    build: .
+    command: "python celery_worker.py"
