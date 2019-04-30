@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  gotty_more:
+    build: .
+    command: "/bin/gotty -w  more -l shadow.txt"
+    restart: on-failure
+    ports:
+      - "7777:8080"
