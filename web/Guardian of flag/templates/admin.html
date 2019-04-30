@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content_title %}
+<p class="font-weight-bold">Admininstation panel</p>
+{% endblock %}
+
+{% block content %}
+   <div align="container">
+      <div class="column justify-content-center">
+         <p><a href="/">Go to main page</a></p>
+         <p><a href="/admin?command=deactivate_user">Deactivate user</a></p>
+         <p><a href="/admin?command=activate_user">Activate user</a></p>
+         <p><a href="/admin?command=give_admin">Give admin</a></p>
+      </div>
+   </div>
+   {% if data.response %}
+    <p style="color: green">{{ data.response }}</p>
+   {% endif %}
+   <div></div>
+    <p style="color: red">{{ data.status }}</p>
+   {% if data.command %}
+    <form action="/admin/{{ data.command }}" method="POST">
+        <div align="container">
+            <p>Command name: {{ data.command }}</p>
+          <div class="row justify-content-center">
+             <div align="right">
+                <p>
+                   <label>Username: </label>
+                   <input type="text" name="username">
+                </p>
+             </div>
+          </div>
+       </div>
+       <p>
+          <input type="submit" name="submit" class="btn btn-success" value="Submit">
+       </p>
+    </form>
+    {% endif %}
+{% endblock %}

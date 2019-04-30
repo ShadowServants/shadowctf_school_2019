@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content_title %}
+<p class="font-weight-bold">Registration</p>
+{% endblock %}
+{% block content %}
+<form action="/register" method="POST">
+    <div align="container">
+        <div class="row justify-content-center">
+            <div align="right">
+                <p>
+                    <label>Login: </label>
+                    <input  type="text" name="login">
+                </p>
+                <p>
+                    <label>Password: </label>
+                    <input  type="password" name="password">
+                </p>
+            </div>
+        </div>
+        <p style="color: red">{{ data.status }}</p>
+        <p>
+            <input type="submit" name="submit" class="btn btn-success" value="Register">
+        </p>
+        <p>Already registered? Let's <a href="/login">login</a></p>
+    </div>
+</form>
+{% endblock %}

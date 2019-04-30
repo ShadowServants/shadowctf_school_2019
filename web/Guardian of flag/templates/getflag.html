@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content_title %}
+<p class="font-weight-bold">Get flag</p>
+{% endblock %}
+
+{% block content %}
+<form action="/get_flag" method="POST">
+   <div align="container">
+      <div class="row justify-content-center">
+         {% if data.valid %}
+            <p>{{ data.flag }}</p>
+         {% else %} 
+         <p>Please, enter you password again, for more secure</p>
+         <div align="right">
+            <p>
+               <label>Password: </label>
+               <input class="form-control" type="password" name="password">
+            </p>
+         </div>
+      </div>
+      <input type="submit" name="submit" class="btn btn-success" value="Get flag">
+      {% endif %}
+   </div>
+   <p>
+   </p>
+</form>
+{% endblock %}
