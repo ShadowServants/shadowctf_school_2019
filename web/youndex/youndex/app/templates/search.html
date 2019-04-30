@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="row mt-5">
+    <div class="col">
+
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-header">Поиск</div>
+            <div class="card-body">
+                <form action='' method='GET'>
+                    <label>Поиск </label>
+                    <input name="q" placeholder='Котики'>
+                    <input type="Submit">
+                </form>
+                {% for x in result %}
+                    <div class="card">
+                        <div class="card-header"><b>{{ x.url }}</b></div>
+                        <div class="card-body">
+                            {{ x.text }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        Вы можете<a href="/add"> добавить</a> сайты в личную базу!
+
+    </div>
+    <div class="col">
+
+    </div>
+
+</div>
+{% endblock %}
