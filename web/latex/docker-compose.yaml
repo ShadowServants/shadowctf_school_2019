@@ -38,7 +38,7 @@ services:
       - ./data/:/var/uploads/data/
       - ./latex/app/static/:/var/static/
     ports:
-      - "8888:80"
+      - "127.0.0.1:8888:80"
     mem_reservation: 128m
     mem_limit: 256m
     restart: on-failure

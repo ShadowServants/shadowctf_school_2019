@@ -4,7 +4,7 @@ services:
     build: .
     command: "gunicorn --worker-class gevent --worker-connections 768 --bind 0.0.0.0:5000 app:app"
     ports:
-      - 5000:5000
+      - 127.0.0.1:5555:5000
   mongo:
     image: mongo:latest
     environment:
