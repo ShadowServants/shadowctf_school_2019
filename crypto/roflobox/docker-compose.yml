@@ -1,0 +1,8 @@
+version: "2.2"
+
+services:
+  roflobox:
+    build: .
+    ports:
+      - "30002:7777"
+    restart: on-failure
