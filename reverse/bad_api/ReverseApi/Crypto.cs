@@ -23,7 +23,7 @@ namespace ReverseApi
             for (int i = 0; i < a.Length; i++)
             {
                 var x = a[i] ^ b[i];
-                sb.Append(x.ToString("X"));
+                sb.Append(x.ToString("x2"));
             }
 
             return sb.ToString();
