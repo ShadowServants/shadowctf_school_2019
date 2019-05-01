@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h2>
+        <img src="/static/logo_white.svg" width="64" height="64"/>
+        Renderer
+    </h2>
+    <br>
+
+    <div class="grid-x">
+        <div class="cell small-3">
+            <div class="card" style="width: 300px;">
+                <div class="card-divider" style="color: black;">
+                    Create PDF from web &mdash;
+                </div>
+                <div class="card-section">
+                    <h4>Love science stuff? We too</h4>
+                    <p>Create documents with formulas from web!</p>
+                </div>
+            </div>
+        </div>
+        <div class="cell small-6">
+            <div class="grid-x">
+                <div class="cell small-6 small-offset-3">
+                    <div class="translucent-form-overlay">
+                        <form action="/login?next=/home" method="post">
+                            {% csrf_token %}
+                            <h3>Welcome back</h3>
+                            <div class="row columns">
+                                <label>Login
+                                    <input type="text" name="username" placeholder="Avaultunto">
+                                </label>
+                            </div>
+                            <div class="row columns">
+                                <label>Password
+                                    <input type="password" name="password" placeholder="*******">
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label class="columns small-12">First time?
+                                    <a href="/register" style="color: #a9d1dd;">Sign up</a>
+                                </label>
+                            </div>
+                            <input type="submit" class="primary button expanded search-button" value="Sign in">
+                            {#                                Sign in#}
+                            {#                            </button>#}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h2>
+        <img src="/static/logo_white.svg" width="64" height="64"/>
+        Renderer
+    </h2>
+    <br>
+
+    <div class="grid-x">
+        <div class="cell small-3">
+            <div class="card" style="width: 300px;">
+                <div class="card-divider" style="color: black;">
+                    Create PDF
+                </div>
+                <div class="card-section">
+                    <a href="/create">Try it</a>
+                </div>
+            </div>
+        </div>
+        <div class="cell small-3">
+            <div class="card" style="width: 300px;">
+                <div class="card-divider" style="color: black;">
+                    List your files
+                </div>
+                <div class="card-section">
+                    <a href="/list">Here</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
