@@ -1,0 +1,44 @@
+version: '2'
+services:
+
+  web:
+    build: .
+    volumes:
+      - ./data/:/app/data
+    command: sh -c "python3 manage.py migrate && gunicorn latex.wsgi -k gevent -w 3 -b 0.0.0.0:8000"
+    mem_limit: 712m
+    mem_reservation: 128m
+    restart: on-failure
+  celery:
+    depends_on:
+      - web
+    build: .
+    volumes:
+      - ./data/:/app/data
+    command: sh -c "python3 manage.py migrate && celery worker -A latex -l info"
+    mem_limit: 256m
+    mem_reservation: 128m
+    restart: on-failure
+
+  redis:
+    image: redis:5-alpine
+    mem_limit: 256m
+    mem_reservation: 128m
+    restart: on-failure
+
+  db:
+    image: postgres
+
+  nginx:
+    depends_on:
+      - web
+    image: nginx:1.15.6-alpine
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d
+      - ./data/:/var/uploads/data/
+      - ./latex/app/static/:/var/static/
+    ports:
+      - "8888:80"
+    mem_reservation: 128m
+    mem_limit: 256m
+    restart: on-failure

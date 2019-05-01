@@ -1,3 +1,5 @@
+from functools import wraps
+
 from flask import Blueprint, render_template, request, flash, session, redirect
 
 from app import jobs
@@ -5,6 +7,17 @@ from app.helpers import get_search_is_running, validate_url
 from app.models import User, WebPage
 
 core = Blueprint('core', __name__, template_folder='templates')
+
+
+def login_required(func):
+    @wraps(func)
+    def decorated_func(*args, **kwargs):
+        if 'id' not in session:
+            return redirect('/login')
+        else:
+            return func(*args, **kwargs)
+
+    return decorated_func
 
 
 @core.route('/')
@@ -51,6 +64,7 @@ def login_page():
 
 
 @core.route('/add', methods=["POST", "GET"])
+@login_required
 def add_page():
     if request.method == 'POST':
         user_id = session['id']
@@ -67,6 +81,7 @@ def add_page():
 
 
 @core.route('/search')
+@login_required
 def search_page():
     user_id = session['id']
     if get_search_is_running(user_id):
