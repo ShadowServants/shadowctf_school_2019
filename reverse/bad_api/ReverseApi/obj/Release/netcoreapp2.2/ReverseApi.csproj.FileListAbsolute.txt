@@ -1,0 +1,6 @@
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Release/netcoreapp2.2/ReverseApi.csprojAssemblyReference.cache
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Release/netcoreapp2.2/ReverseApi.csproj.CoreCompileInputs.cache
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Release/netcoreapp2.2/ReverseApi.RazorAssemblyInfo.cache
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Release/netcoreapp2.2/ReverseApi.RazorAssemblyInfo.cs
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Release/netcoreapp2.2/ReverseApi.AssemblyInfoInputs.cache
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Release/netcoreapp2.2/ReverseApi.AssemblyInfo.cs

@@ -1,0 +1,15 @@
+/Users/john/RiderProjects/ReverseApi/ReverseApi/bin/Debug/netcoreapp2.2/ReverseApi.dll.config
+/Users/john/RiderProjects/ReverseApi/ReverseApi/bin/Debug/netcoreapp2.2/ReverseApi.deps.json
+/Users/john/RiderProjects/ReverseApi/ReverseApi/bin/Debug/netcoreapp2.2/ReverseApi.runtimeconfig.json
+/Users/john/RiderProjects/ReverseApi/ReverseApi/bin/Debug/netcoreapp2.2/ReverseApi.runtimeconfig.dev.json
+/Users/john/RiderProjects/ReverseApi/ReverseApi/bin/Debug/netcoreapp2.2/ReverseApi.dll
+/Users/john/RiderProjects/ReverseApi/ReverseApi/bin/Debug/netcoreapp2.2/ReverseApi.pdb
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Debug/netcoreapp2.2/ReverseApi.csprojAssemblyReference.cache
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Debug/netcoreapp2.2/ReverseApi.csproj.CoreCompileInputs.cache
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Debug/netcoreapp2.2/ReverseApi.RazorAssemblyInfo.cache
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Debug/netcoreapp2.2/ReverseApi.RazorAssemblyInfo.cs
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Debug/netcoreapp2.2/ReverseApi.AssemblyInfoInputs.cache
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Debug/netcoreapp2.2/ReverseApi.AssemblyInfo.cs
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Debug/netcoreapp2.2/ReverseApi.RazorTargetAssemblyInfo.cache
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Debug/netcoreapp2.2/ReverseApi.dll
+/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/Debug/netcoreapp2.2/ReverseApi.pdb
