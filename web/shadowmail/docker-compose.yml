@@ -24,7 +24,7 @@ services:
     environment:
      - NODE_ENV=production
      - HOST=database
-     - FLAG=FLAG{3vIL_vUe_7empL4te5}
+     - FLAG=shadowctf{3vIL_vUe_7empL4te5}
     ports:
      - "44444:3000"
   bot:
