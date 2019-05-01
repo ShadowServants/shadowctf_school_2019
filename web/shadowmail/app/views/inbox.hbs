@@ -1,0 +1,201 @@
+<div id="app">
+    <div class="ui visible inverted left vertical sidebar menu">
+        <a class="item" href="/">
+            <h2 class="ui inverted header">
+                <img src="/images/logo256.png" class="ui image">
+                <div class="content">
+                    ShadowMail
+                    <div class="sub header"
+                         style="font-size: 12px; max-width: 135px;white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;">
+                        {{username}}@shadowmail
+                    </div>
+                </div>
+            </h2>
+        </a>
+        <a class="item" v-on:click="setTab(0)">
+            <h5 class="ui inverted header">
+                <i class="envelope icon"></i>
+                Inbox
+            </h5>
+        </a>
+        <a class="item" v-on:click="setTab(1)">
+            <h5 class="ui inverted header">
+                <i class="paper plane icon"></i>
+                Sent
+            </h5>
+        </a>
+        <a class="item" v-on:click="setTab(2)">
+            <h5 class="ui inverted header">
+                <i class="plus circle icon"></i>
+                Compose
+            </h5>
+        </a>
+        <a class="item" href="/logout">
+            <h5 class="ui red header">
+                <i class="sign out alternate icon"></i>
+                Logout
+            </h5>
+        </a>
+    </div>
+    <div class="pusher">
+        <div class="ui container" style="margin-left: 20px!important;">
+            <div class="ui basic segment" v-bind:class="{ loading: is_loading }" style="min-height: 200px">
+                <h2 v-if="tab == 0" class="ui header">Inbox</h2>
+                <h2 v-if="tab == 1" class="ui header">Sent</h2>
+                <h2 v-if="tab == 2" class="ui header">Compose</h2>
+                <div v-if="error" class="ui error message">\{{error}}</div>
+                <div v-for="letter in inbox" v-if="!is_loading && tab == 0" style="margin-bottom: 10px!important;">
+                    <a v-bind:href="'/mail/'+ letter.id" style="color: inherit; text-decoration: inherit">
+                        <div class="ui segment">
+                            <div v-if="!letter.read" class="ui red top left attached label">New</div>
+                            <div class="ui list">
+                                <div class="item"><b>From:</b> \{{ letter.from_username }}@shadowmail</div>
+                                <div class="item"><b>Subject:</b> \{{ letter.subject }}</div>
+                                <div class="ui divider"></div>
+                                <div class="item">
+                                    \{{ letter.body.substring(0, 30) + (letter.body.length <= 30 ? '' : '...') }}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div v-for="letter in sent" v-if="!is_loading && tab == 1" style="margin-bottom: 10px!important;">
+                    <a v-bind:href="'/mail/'+ letter.id" style="color: inherit; text-decoration: inherit">
+                        <div class="ui segment">
+                            <div class="ui list">
+                                <div class="item"><b>To:</b> \{{ letter.to_username }}@shadowmail</div>
+                                <div class="item"><b>Subject:</b> \{{ letter.subject }}</div>
+                                <div class="ui divider"></div>
+                                <div class="item">
+                                    \{{ letter.body.substring(0, 30) + (letter.body.length <= 30 ? '' : '...') }}
+                                </div>
+                            </div>
+                            <div v-if="!letter.read" class="ui blue bottom right attached label">
+                                <i class="envelope outline icon"></i>
+                                Delivered
+                            </div>
+                            <div v-if="letter.read" class="ui green bottom right attached label">
+                                <i class="envelope open outline icon"></i>
+                                Seen
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div v-if="!is_loading && tab == 2">
+                    <form v-bind:class="{ loading: is_loading }" @submit.prevent="send" class="ui large form">
+                        <div class="ui segment" style="margin-bottom: 10px">
+                            <div class="field">
+                                <label>E-mail</label>
+                                <input type="text" placeholder="example@shadowmail" name="email"/>
+                            </div>
+                            <div class="field">
+                                <label>Subject</label>
+                                <input type="text" name="subject"/>
+                            </div>
+                            <div class="field">
+                                <label>Content</label>
+                                <textarea name="body"></textarea>
+                            </div>
+                            <input type="submit" class="ui large primary submit button" value="Send"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            tab: 0,
+            is_loading: true,
+            inbox: [],
+            sent: [],
+            error: null
+        },
+        methods: {
+            fetchInbox() {
+                this.is_loading = true;
+                fetch(`/inbox`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(res => res.json()).then(res => {
+                    this.is_loading = false;
+                    if (!res) {
+                        this.error = 'Error occurred, please try again later';
+                    } else if (!res.success) {
+                        this.error = res.error;
+                    } else {
+                        this.error = null;
+                        this.inbox = res.data.reverse();
+                    }
+                })
+            },
+            send(submitEvent) {
+                this.is_loading = true;
+                let email = submitEvent.target.elements.email.value;
+                let subject = submitEvent.target.elements.subject.value;
+                let body = submitEvent.target.elements.body.value;
+                fetch(`/send`, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({email, subject, body})
+                }).then(res => res.json()).then(res => {
+                    this.is_loading = false;
+                    if (!res) {
+                        this.error = 'Error occurred, please try again later';
+                    } else if (!res.success) {
+                        this.error = res.error;
+                    } else {
+                        this.error = null;
+                        this.setTab(1);
+                    }
+                })
+            },
+            fetchSent() {
+                this.is_loading = true;
+                fetch(`/sent`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(res => res.json()).then(res => {
+                    this.is_loading = false;
+                    if (!res) {
+                        this.error = 'Error occurred, please try again later';
+                    } else if (!res.success) {
+                        this.error = res.error;
+                    } else {
+                        this.error = null;
+                        this.sent = res.data.reverse();
+                    }
+                })
+            },
+            setTab(tab) {
+                let tabs = ['inbox', 'sent', 'compose'];
+                this.tab = tab;
+                location.hash = '#' + tabs[tab];
+                if (tab === 0)
+                    this.fetchInbox();
+                else
+                    this.fetchSent();
+            }
+        },
+        created() {
+            let tabs = ['inbox', 'sent', 'compose'];
+            let tab = 0;
+            if (location.hash && location.hash.length > 1) {
+                tab = tabs.indexOf(location.hash.substring(1));
+                if (tab < 0)
+                    tab = 0;
+            }
+            this.setTab(tab);
+        }
+    })
+</script>

@@ -1,0 +1,50 @@
+version: "3"
+services:
+  database:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    networks:
+     - inner
+    environment:
+     - MYSQL_ROOT_PASSWORD=password
+     - MYSQL_DATABASE=shadowmail
+     - MYSQL_ROOT_HOST=%
+    volumes:
+     - ./database:/docker-entrypoint-initdb.d
+  app:
+    build:
+      context: app/
+    depends_on:
+     - database
+    restart: always
+    networks:
+     - inner
+     - outer
+    environment:
+     - NODE_ENV=production
+     - HOST=database
+     - FLAG=FLAG{3vIL_vUe_7empL4te5}
+    ports:
+     - "44444:3000"
+  bot:
+    build:
+      context: bot/
+    depends_on:
+     - app
+    restart: always
+    networks:
+     - inner
+     - outer
+    environment:
+     - NODE_ENV=production
+     - SLEEP_INTERVAL=30000
+     - HOST=app
+     - PORT=3000
+
+networks:
+  outer:
+    driver: bridge
+  inner:
+    driver: bridge
+    internal: true
