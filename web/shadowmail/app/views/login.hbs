@@ -1,0 +1,85 @@
+<style type="text/css">
+    body {
+        background-color: #263238;
+    }
+
+    body > .grid {
+        height: 100%;
+    }
+
+    .image {
+        margin-top: -100px;
+    }
+
+    .column {
+        max-width: 450px;
+    }
+</style>
+<div class="ui middle aligned center aligned grid" id="app">
+    <div class="column">
+        <h1 class="ui inverted image header">
+            <img src="/images/logo256.png" class="image">
+            <div class="content">
+                ShadowMail
+            </div>
+        </h1>
+        <form v-bind:class="{ loading: is_loading }" @submit.prevent="login" class="ui large form">
+            <div class="ui segment inverted">
+                <div class="field">
+                    <div class="ui right labeled left icon input">
+                        <i class="user icon"></i>
+                        <input type="text" name="username" placeholder="Username">
+                        <div class="ui label">
+                            @shadowmail
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="lock icon"></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                </div>
+                <input type="submit" class="ui fluid large inverted submit button" value="Login" />
+            </div>
+        </form>
+        <div v-if="error" class="ui inverted error message">\{{error}}</div>
+        <div class="ui inverted message">
+            Don't have an account? <a href="/signup">Sign up</a> now!
+        </div>
+    </div>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            is_loading: false,
+            error: null
+        },
+        methods: {
+            login(submitEvent) {
+                this.is_loading = true;
+                let username = submitEvent.target.elements.username.value;
+                let password = submitEvent.target.elements.password.value;
+                fetch(`/login`, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({username, password})
+                }).then(res => res.json()).then(res => {
+                    this.is_loading = false;
+                    if (!res) {
+                        this.error = 'Error occurred, please try again later';
+                    } else if (!res.success) {
+                        this.error = res.error;
+                    } else {
+                        this.error = null;
+                        window.open('/', '_self');
+                    }
+                })
+            }
+        }
+    })
+</script>
