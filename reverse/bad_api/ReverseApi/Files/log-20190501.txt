@@ -1,0 +1,512 @@
+2019-05-01T14:10:33.1844050+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:10:33.3411610+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:10:33.4210710+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:10:33.5294490+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:10:33.5367310+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 3.0004ms. 
+2019-05-01T14:10:33.5729470+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:10:33.6438670+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 216.9921ms 
+2019-05-01T14:10:33.6459020+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:10:33.6507380+03:00 ::1 GET / 200 
+2019-05-01T14:10:33.6597690+03:00 Request finished in 487.1439ms 200 text/html 
+2019-05-01T14:10:37.5564800+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:10:37.5580370+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:10:37.5600340+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:10:37.5631020+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:10:37.5655020+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.2493ms. 
+2019-05-01T14:10:37.5821750+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:10:37.5964820+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 36.3509ms 
+2019-05-01T14:10:37.5965500+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:10:37.5966120+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:10:37.5995670+03:00 Request finished in 43.136ms 200 text/plain; charset=utf-8 
+2019-05-01T14:11:27.2931750+03:00 Connection id ""0HLME4MGFRNA5"" bad request data: ""POST request contains no Content-Length or Transfer-Encoding header."" 
+2019-05-01T14:11:52.2701280+03:00 Request starting HTTP/1.1 POST http://localhost:5000/api/flag application/x-www-form-urlencoded 3 
+2019-05-01T14:11:52.2702410+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Post (ReverseApi)"' 
+2019-05-01T14:11:52.2712810+03:00 Route matched with "{action = \"Post\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Post (ReverseApi)" 
+2019-05-01T14:11:52.2714050+03:00 Executing action method "ReverseApi.Controllers.FlagController.Post (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:11:52.2746490+03:00 Executed action method "ReverseApi.Controllers.FlagController.Post (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 3.177ms. 
+2019-05-01T14:11:52.2747720+03:00 Executing ContentResult with HTTP Response ContentType of "text/plain; charset=utf-8" 
+2019-05-01T14:11:52.2750210+03:00 Executed action "ReverseApi.Controllers.FlagController.Post (ReverseApi)" in 3.6927ms 
+2019-05-01T14:11:52.2750660+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Post (ReverseApi)"' 
+2019-05-01T14:11:52.2750900+03:00 ::1 POST /api/flag 200 
+2019-05-01T14:11:52.2751420+03:00 Request finished in 5.0713ms 200 text/plain; charset=utf-8 
+2019-05-01T14:11:52.3103650+03:00 Connection id ""0HLME4MGFRNA6"", Request id ""0HLME4MGFRNA6:00000001"": the application completed without reading the entire request body. 
+2019-05-01T14:41:25.0836390+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:41:25.2566140+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:25.3444970+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:41:25.4483130+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:41:25.4541260+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 2.3741ms. 
+2019-05-01T14:41:25.4868290+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:41:25.5579500+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 207.9599ms 
+2019-05-01T14:41:25.5596440+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:25.5648470+03:00 ::1 GET / 200 
+2019-05-01T14:41:25.5755030+03:00 Request finished in 503.5773ms 200 text/html 
+2019-05-01T14:41:25.5913640+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:41:25.5933800+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:25.5946390+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:41:25.6107980+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:41:25.6115470+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.6643ms. 
+2019-05-01T14:41:25.6117230+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:41:25.6120410+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 17.3083ms 
+2019-05-01T14:41:25.6120870+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:25.6121650+03:00 ::1 GET /test.js 200 
+2019-05-01T14:41:25.6122580+03:00 Request finished in 20.9489ms 200 text/html 
+2019-05-01T14:41:44.0150330+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:41:44.0151030+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:44.0163580+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:41:44.0165360+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:41:44.0167840+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1883ms. 
+2019-05-01T14:41:44.0168440+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:41:44.0170440+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.6063ms 
+2019-05-01T14:41:44.0170800+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:44.0171100+03:00 ::1 GET / 200 
+2019-05-01T14:41:44.0171640+03:00 Request finished in 2.1956ms 200 text/html 
+2019-05-01T14:41:44.0367060+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:41:44.0367790+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:44.0368390+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:41:44.0370390+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:41:44.0374900+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.4026ms. 
+2019-05-01T14:41:44.0375600+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:41:44.0376420+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.7445ms 
+2019-05-01T14:41:44.0376830+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:44.0377110+03:00 ::1 GET /test.js 200 
+2019-05-01T14:41:44.0377510+03:00 Request finished in 1.0977ms 200 text/html 
+2019-05-01T14:41:58.2245890+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:41:58.2246550+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:58.2247070+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:41:58.2248070+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:41:58.2250330+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1445ms. 
+2019-05-01T14:41:58.2250790+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:41:58.2252540+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.4948ms 
+2019-05-01T14:41:58.2252920+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:58.2253320+03:00 ::1 GET / 200 
+2019-05-01T14:41:58.2253650+03:00 Request finished in 0.8402ms 200 text/html 
+2019-05-01T14:41:58.2398720+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:41:58.2399370+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:58.2399910+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:41:58.2401400+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:41:58.2404260+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.2309ms. 
+2019-05-01T14:41:58.2404700+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:41:58.2405530+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.4885ms 
+2019-05-01T14:41:58.2406270+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:41:58.2406630+03:00 ::1 GET /test.js 200 
+2019-05-01T14:41:58.2406920+03:00 Request finished in 0.8544ms 200 text/html 
+2019-05-01T14:42:11.1055360+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:42:11.1056410+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:11.1056970+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:42:11.1058210+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:42:11.1060890+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1904ms. 
+2019-05-01T14:42:11.1061590+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:42:11.1062470+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.4895ms 
+2019-05-01T14:42:11.1062800+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:11.1063040+03:00 ::1 GET / 200 
+2019-05-01T14:42:11.1063680+03:00 Request finished in 0.8766ms 200 text/html 
+2019-05-01T14:42:11.1214900+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:42:11.1215450+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:11.1216520+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:42:11.1217940+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:42:11.1220050+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1603ms. 
+2019-05-01T14:42:11.1220780+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:42:11.1222960+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.5773ms 
+2019-05-01T14:42:11.1223320+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:11.1223670+03:00 ::1 GET /test.js 200 
+2019-05-01T14:42:11.1223970+03:00 Request finished in 0.9792ms 200 text/html 
+2019-05-01T14:42:38.0440050+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:42:38.0440790+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:38.0441580+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:42:38.0443040+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:42:38.0445620+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1816ms. 
+2019-05-01T14:42:38.0446230+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:42:38.0448350+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.6167ms 
+2019-05-01T14:42:38.0448700+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:38.0449030+03:00 ::1 GET / 200 
+2019-05-01T14:42:38.0449280+03:00 Request finished in 0.9969ms 200 text/html 
+2019-05-01T14:42:38.0584770+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:42:38.0585740+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:38.0586380+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:42:38.0587790+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:42:38.0590050+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.176ms. 
+2019-05-01T14:42:38.0590500+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:42:38.0592660+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.5819ms 
+2019-05-01T14:42:38.0593020+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:38.0593280+03:00 ::1 GET /test.js 200 
+2019-05-01T14:42:38.0593550+03:00 Request finished in 0.9409ms 200 text/html 
+2019-05-01T14:42:51.1615820+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:42:51.1616510+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:42:51.1633210+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:42:51.1670780+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:42:51.1693890+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.1986ms. 
+2019-05-01T14:42:51.1880440+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:42:51.2060890+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 42.672ms 
+2019-05-01T14:42:51.2061620+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:42:51.2061930+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:42:51.2100760+03:00 Request finished in 48.5386ms 200 text/plain; charset=utf-8 
+2019-05-01T14:42:59.1148790+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:42:59.1149380+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:59.1149930+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:42:59.1151300+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:42:59.1153970+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.2188ms. 
+2019-05-01T14:42:59.1154480+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:42:59.1155100+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.4805ms 
+2019-05-01T14:42:59.1155880+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:59.1156150+03:00 ::1 GET / 200 
+2019-05-01T14:42:59.1156580+03:00 Request finished in 0.8193ms 200 text/html 
+2019-05-01T14:42:59.1294950+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:42:59.1296050+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:59.1296780+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:42:59.1298120+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:42:59.1300530+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1982ms. 
+2019-05-01T14:42:59.1301130+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:42:59.1301900+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.4766ms 
+2019-05-01T14:42:59.1302540+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:42:59.1302790+03:00 ::1 GET /test.js 200 
+2019-05-01T14:42:59.1303190+03:00 Request finished in 0.8817ms 200 text/html 
+2019-05-01T14:43:28.3721730+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:43:28.5386720+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:43:28.6287960+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:43:28.7542540+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:43:28.7648190+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 5.5928ms. 
+2019-05-01T14:43:28.8178350+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:43:28.9700840+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 335.0445ms 
+2019-05-01T14:43:28.9728600+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:43:28.9799710+03:00 ::1 GET / 200 
+2019-05-01T14:43:28.9924120+03:00 Request finished in 630.554ms 200 text/html 
+2019-05-01T14:43:29.0197210+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:43:29.0228230+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:43:29.0254450+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:43:29.0504020+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:43:29.0523970+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 1.8738ms. 
+2019-05-01T14:43:29.0525820+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:43:29.0528980+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 27.3916ms 
+2019-05-01T14:43:29.0529410+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:43:29.0530010+03:00 ::1 GET /test.js 200 
+2019-05-01T14:43:29.0530700+03:00 Request finished in 33.4549ms 200 text/html 
+2019-05-01T14:43:52.4704910+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:43:52.6132970+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:43:52.6916800+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:43:52.7964710+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:43:52.8021190+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 1.9434ms. 
+2019-05-01T14:43:52.8367320+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:43:52.9084140+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 209.75ms 
+2019-05-01T14:43:52.9104670+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:43:52.9153040+03:00 ::1 GET / 200 
+2019-05-01T14:43:52.9245140+03:00 Request finished in 466.3856ms 200 text/html 
+2019-05-01T14:43:53.1515670+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:43:53.1540850+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:43:53.1559970+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:43:53.1761840+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:43:53.1767600+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.4728ms. 
+2019-05-01T14:43:53.1769170+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:43:53.1772410+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 21.162ms 
+2019-05-01T14:43:53.1773170+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:43:53.1774100+03:00 ::1 GET /test.js 200 
+2019-05-01T14:43:53.1774860+03:00 Request finished in 25.9656ms 200 text/html 
+2019-05-01T14:45:20.0742820+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:45:20.2146030+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:20.2945940+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:20.3193170+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:45:20.3194620+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:20.3206280+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:20.4076250+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:45:20.4076360+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:45:20.4136630+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 2.1607ms. 
+2019-05-01T14:45:20.4136630+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 2.1555ms. 
+2019-05-01T14:45:20.4460150+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:20.4461140+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:20.4734250+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 170.2144ms 
+2019-05-01T14:45:20.4753450+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:20.4803740+03:00 ::1 GET / 200 
+2019-05-01T14:45:20.4885360+03:00 Request finished in 425.4492ms 200 text/html 
+2019-05-01T14:45:20.4985630+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 177.8392ms 
+2019-05-01T14:45:20.4986120+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:20.4987040+03:00 ::1 GET / 200 
+2019-05-01T14:45:20.5005390+03:00 Request finished in 181.2558ms 200 text/html 
+2019-05-01T14:45:20.7232770+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:45:20.7255660+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:20.7267120+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:20.7424330+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:45:20.7426780+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1578ms. 
+2019-05-01T14:45:20.7427700+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:20.7429620+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 16.2142ms 
+2019-05-01T14:45:20.7430050+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:20.7430370+03:00 ::1 GET /test.js 200 
+2019-05-01T14:45:20.7430860+03:00 Request finished in 19.8761ms 200 text/html 
+2019-05-01T14:45:21.1851800+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:45:21.1852530+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:21.1853410+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:21.1854780+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:45:21.1857170+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1844ms. 
+2019-05-01T14:45:21.1857870+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:21.1858720+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.4726ms 
+2019-05-01T14:45:21.1859010+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:21.1859260+03:00 ::1 GET / 200 
+2019-05-01T14:45:21.1859700+03:00 Request finished in 0.8371ms 200 text/html 
+2019-05-01T14:45:21.2146410+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:45:21.2147240+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:21.2147760+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:21.2149720+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:45:21.2151920+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.164ms. 
+2019-05-01T14:45:21.2152510+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:21.2153350+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.5075ms 
+2019-05-01T14:45:21.2153610+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:21.2153820+03:00 ::1 GET /test.js 200 
+2019-05-01T14:45:21.2154320+03:00 Request finished in 0.8233ms 200 text/html 
+2019-05-01T14:45:22.3573390+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:22.3574410+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:22.3586890+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:22.3616540+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:22.3634560+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.717ms. 
+2019-05-01T14:45:22.3810980+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:22.3949880+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 36.2425ms 
+2019-05-01T14:45:22.3950720+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:22.3951200+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:22.3983120+03:00 Request finished in 41.0019ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:23.2717040+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:23.2717870+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:23.2718680+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:23.2719730+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:23.2720750+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0479ms. 
+2019-05-01T14:45:23.2722330+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:23.2723320+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.4272ms 
+2019-05-01T14:45:23.2724200+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:23.2724490+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:23.2725540+03:00 Request finished in 0.8451ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:23.7306770+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:23.7307650+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:23.7308210+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:23.7308740+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:23.7309140+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0027ms. 
+2019-05-01T14:45:23.7310230+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:23.7311140+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2578ms 
+2019-05-01T14:45:23.7311680+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:23.7311990+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:23.7312500+03:00 Request finished in 0.6709ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:24.1594630+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:24.1595440+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.1596300+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:24.1597050+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:24.1597420+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0027ms. 
+2019-05-01T14:45:24.1598040+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:24.1598940+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2196ms 
+2019-05-01T14:45:24.1599480+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.1599720+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:24.1600250+03:00 Request finished in 0.626ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:24.3491840+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:24.3492720+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.3493370+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:24.3494280+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:24.3495120+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0031ms. 
+2019-05-01T14:45:24.3495810+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:24.3497580+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.3596ms 
+2019-05-01T14:45:24.3498060+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.3498580+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:24.3499150+03:00 Request finished in 0.7715ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:24.5492150+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:24.5492970+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.5493430+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:24.5494050+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:24.5494510+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0025ms. 
+2019-05-01T14:45:24.5495150+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:24.5496370+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2447ms 
+2019-05-01T14:45:24.5496870+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.5497210+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:24.5497740+03:00 Request finished in 0.6173ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:24.7170660+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:24.7171520+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.7172300+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:24.7173180+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:24.7173830+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0032ms. 
+2019-05-01T14:45:24.7174660+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:24.7175710+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2824ms 
+2019-05-01T14:45:24.7176060+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.7176510+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:24.7176980+03:00 Request finished in 0.6779ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:24.8918290+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:24.8919030+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.8919560+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:24.8920160+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:24.8920640+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0129ms. 
+2019-05-01T14:45:24.8921550+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:24.8922410+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2462ms 
+2019-05-01T14:45:24.8922900+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:24.8923190+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:24.8923590+03:00 Request finished in 0.5687ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:25.0534690+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:25.0535400+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:25.0536060+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:25.0536660+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:25.0537150+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0025ms. 
+2019-05-01T14:45:25.0537760+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:25.0538310+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.1922ms 
+2019-05-01T14:45:25.0538900+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:25.0539130+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:25.0539570+03:00 Request finished in 0.5302ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:30.4317770+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:45:30.4318490+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:30.4319120+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:30.4320390+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:45:30.4323380+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1944ms. 
+2019-05-01T14:45:30.4323940+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:30.4325960+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.615ms 
+2019-05-01T14:45:30.4326330+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:30.4326700+03:00 ::1 GET / 200 
+2019-05-01T14:45:30.4327020+03:00 Request finished in 1.0046ms 200 text/html 
+2019-05-01T14:45:30.4439890+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:45:30.4440850+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:30.4441650+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:30.4443120+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:45:30.4445610+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 0.1633ms. 
+2019-05-01T14:45:30.4446650+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:30.4447570+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 0.5358ms 
+2019-05-01T14:45:30.4447850+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:30.4448610+03:00 ::1 GET /test.js 200 
+2019-05-01T14:45:30.4448950+03:00 Request finished in 0.9525ms 200 text/html 
+2019-05-01T14:45:31.5852830+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:31.5853720+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:31.5854440+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:31.5855150+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:31.5855780+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0033ms. 
+2019-05-01T14:45:31.5856590+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:31.5857550+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2678ms 
+2019-05-01T14:45:31.5858150+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:31.5858490+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:31.5858930+03:00 Request finished in 0.6568ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:32.1463660+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:32.1464500+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:32.1465150+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:32.1465780+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:32.1466300+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0027ms. 
+2019-05-01T14:45:32.1466940+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:32.1467590+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2073ms 
+2019-05-01T14:45:32.1468210+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:32.1468450+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:32.1468830+03:00 Request finished in 0.5585ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:32.4730910+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:32.4731830+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:32.4732830+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:32.4733690+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:32.4734180+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.003ms. 
+2019-05-01T14:45:32.4735050+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:32.4736100+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2673ms 
+2019-05-01T14:45:32.4736500+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:32.4736790+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:32.4737410+03:00 Request finished in 0.7227ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:32.6336520+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:32.6337170+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:32.6337670+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:32.6338270+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:32.6338700+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0028ms. 
+2019-05-01T14:45:32.6339470+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:32.6340440+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2238ms 
+2019-05-01T14:45:32.6340750+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:32.6341010+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:32.6341550+03:00 Request finished in 0.5527ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:32.7935820+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:32.7936520+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:32.7937450+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:32.7938190+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:32.7938490+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0025ms. 
+2019-05-01T14:45:32.7939080+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:32.7939920+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.1942ms 
+2019-05-01T14:45:32.7940250+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:32.7940520+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:32.7941040+03:00 Request finished in 0.5881ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:53.0309790+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:45:53.1506710+03:00 Request starting HTTP/1.1 GET http://localhost:5000/   
+2019-05-01T14:45:53.1680520+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:53.1680530+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:53.2589080+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:53.2589100+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:53.3620440+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:45:53.3620380+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["index.html"]) - Validation state: Valid 
+2019-05-01T14:45:53.3674060+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 1.9909ms. 
+2019-05-01T14:45:53.3674150+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 2.0045ms. 
+2019-05-01T14:45:53.4031700+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:53.4031800+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:53.4305200+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 166.537ms 
+2019-05-01T14:45:53.4325170+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:53.4381030+03:00 ::1 GET / 200 
+2019-05-01T14:45:53.4463930+03:00 Request finished in 426.3039ms 200 text/html 
+2019-05-01T14:45:53.4654710+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 204.6104ms 
+2019-05-01T14:45:53.4655340+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:53.4656640+03:00 ::1 GET / 200 
+2019-05-01T14:45:53.4679960+03:00 Request finished in 317.3142ms 200 text/html 
+2019-05-01T14:45:53.8062070+03:00 Request starting HTTP/1.1 GET http://localhost:5000/test.js   
+2019-05-01T14:45:53.8089920+03:00 Executing endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:53.8106160+03:00 Route matched with "{action = \"Index\", controller = \"Index\"}". Executing action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" 
+2019-05-01T14:45:53.8279580+03:00 Executing action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)" with arguments (["test.js"]) - Validation state: Valid 
+2019-05-01T14:45:53.8347210+03:00 Executed action method "ReverseApi.Controllers.IndexController.Index (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ContentResult" in 6.6331ms. 
+2019-05-01T14:45:53.8349710+03:00 Executing ContentResult with HTTP Response ContentType of "text/html" 
+2019-05-01T14:45:53.8351670+03:00 Executed action "ReverseApi.Controllers.IndexController.Index (ReverseApi)" in 24.483ms 
+2019-05-01T14:45:53.8352390+03:00 Executed endpoint '"ReverseApi.Controllers.IndexController.Index (ReverseApi)"' 
+2019-05-01T14:45:53.8352950+03:00 ::1 GET /test.js 200 
+2019-05-01T14:45:53.8353750+03:00 Request finished in 29.1791ms 200 text/html 
+2019-05-01T14:45:55.7284810+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:55.7285780+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:55.7300820+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:55.7350050+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:55.7380810+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.9274ms. 
+2019-05-01T14:45:55.7569980+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:55.7716720+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 41.4898ms 
+2019-05-01T14:45:55.7717530+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:55.7717810+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:55.7768360+03:00 Request finished in 48.4378ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:56.3168200+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:56.3168920+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:56.3180480+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:56.3181840+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:56.3182800+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.05ms. 
+2019-05-01T14:45:56.3184590+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:56.3185880+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.4614ms 
+2019-05-01T14:45:56.3186170+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:56.3186580+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:56.3187300+03:00 Request finished in 1.9479ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:56.7434410+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:56.7435170+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:56.7435800+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:56.7436320+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:56.7436960+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0024ms. 
+2019-05-01T14:45:56.7438170+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:56.7439320+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2995ms 
+2019-05-01T14:45:56.7439900+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:56.7440200+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:56.7440740+03:00 Request finished in 0.673ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:56.9911710+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:56.9912540+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:56.9914020+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:56.9915010+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:56.9915510+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0033ms. 
+2019-05-01T14:45:56.9916410+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:56.9918120+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.2908ms 
+2019-05-01T14:45:56.9918590+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:56.9918910+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:56.9920160+03:00 Request finished in 0.8711ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:57.2018030+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:57.2019000+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:57.2019710+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:57.2020630+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:57.2021250+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.003ms. 
+2019-05-01T14:45:57.2021940+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:57.2023370+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.3016ms 
+2019-05-01T14:45:57.2024250+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:57.2024710+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:57.2025340+03:00 Request finished in 0.7929ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:57.3931960+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:57.3932570+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:57.3933170+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:57.3933930+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:57.3934350+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0027ms. 
+2019-05-01T14:45:57.3935070+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:57.3935840+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.221ms 
+2019-05-01T14:45:57.3936150+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:57.3936430+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:57.3937270+03:00 Request finished in 0.5901ms 200 text/plain; charset=utf-8 
+2019-05-01T14:45:57.5614410+03:00 Request starting HTTP/1.1 GET http://localhost:5000/api/flag   
+2019-05-01T14:45:57.5615070+03:00 Executing endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:57.5616120+03:00 Route matched with "{action = \"Get\", controller = \"Flag\"}". Executing action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" 
+2019-05-01T14:45:57.5617240+03:00 Executing action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)" - Validation state: Valid 
+2019-05-01T14:45:57.5617800+03:00 Executed action method "ReverseApi.Controllers.FlagController.Get (ReverseApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0032ms. 
+2019-05-01T14:45:57.5618640+03:00 Executing ObjectResult, writing value of type '"System.String"'. 
+2019-05-01T14:45:57.5619580+03:00 Executed action "ReverseApi.Controllers.FlagController.Get (ReverseApi)" in 0.3027ms 
+2019-05-01T14:45:57.5620260+03:00 Executed endpoint '"ReverseApi.Controllers.FlagController.Get (ReverseApi)"' 
+2019-05-01T14:45:57.5620590+03:00 ::1 GET /api/flag 200 
+2019-05-01T14:45:57.5621270+03:00 Request finished in 0.7228ms 200 text/plain; charset=utf-8 
