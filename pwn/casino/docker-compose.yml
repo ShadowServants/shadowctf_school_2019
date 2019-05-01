@@ -1,0 +1,13 @@
+version: "2.2"
+
+services:
+  casino:
+    build: .
+    ports:
+      - "30001:7777"
+    restart: on-failure
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    tty: true

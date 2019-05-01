@@ -1,0 +1,6 @@
+version: '3'
+services:
+  please_work_api:
+    build: .
+    ports:
+      - "8008:80"

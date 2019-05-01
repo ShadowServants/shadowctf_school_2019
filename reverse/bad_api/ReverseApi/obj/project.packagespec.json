@@ -1,0 +1,62 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/john/RiderProjects/ReverseApi/ReverseApi/ReverseApi.csproj",
+    "projectName": "ReverseApi",
+    "projectPath": "/Users/john/RiderProjects/ReverseApi/ReverseApi/ReverseApi.csproj",
+    "outputPath": "/Users/john/RiderProjects/ReverseApi/ReverseApi/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/Users/john/.dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "Microsoft.AspNetCore": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.AspNetCore.HttpsPolicy": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.AspNetCore.Mvc": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        },
+        "Serilog.Extensions.Logging.File": {
+          "target": "Package",
+          "version": "[2.0.0-dev-00032, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

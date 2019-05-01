@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/test.js"></script>
+    <title>Welcome</title>
+</head>
+<body>
+    <button onclick="f()">GET THE FLAG</button>
+    <h5 id="kek"></h5>
+    
+</body>
+<script>
+    function f() {
+        var flag = httpGet("/api/flag");
+        document.getElementById("kek").innerText = flag; 
+    }
+</script>
+</html>
