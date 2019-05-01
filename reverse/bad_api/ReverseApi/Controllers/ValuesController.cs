@@ -20,7 +20,7 @@ namespace ReverseApi.Controllers
             var hash = Crypto.GetHash(Crypto.Reverse(Crypto.GetHash(ip)));
 
             var f = Request.Headers["X-Flag"];
-            return Content(Crypto.XorStrings(hash, f) != "373C855211F1916314B3225A6CF7381525F3614E40" ? "BAD FLAG" : "GOOD FLAG BRO!");
+            return Content(Crypto.XorStrings(hash, f) != "190c5405233e2618563f4f33122b2c022f1f2c4e24040e40" ? "BAD FLAG" : "GOOD FLAG BRO!");
         }
     }
 }
