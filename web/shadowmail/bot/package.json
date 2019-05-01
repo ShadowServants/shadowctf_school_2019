@@ -1,0 +1,12 @@
+{
+  "name": "shadowmail-bot",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^1.15.0",
+    "winston": "~2.4.0",
+    "moment": "latest"
+  }
+}
