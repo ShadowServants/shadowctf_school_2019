@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <title>Youndex</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href="/static/signin.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        {% if secret %}
+            <p>Твой секрет: </p>
+            <p>{{ secret }}</p>
+        {% else %}
+            <p>У тебя еще нет секрета!</p>
+            <p>Скорее добавь свой секрет!</p>
+        {% endif %}
+    </div>
+
+    <div class="col">
+
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-header">Добавление секрета</div>
+            <div class="card-body">
+                <form action='' method='POST'>
+                    <label>Добавить секрет</label>
+                    <input name="secret" placeholder='Я люблю C++'>
+                    <input type="Submit">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="col">
+
+    </div>
+</div>
+</body>
+</html>

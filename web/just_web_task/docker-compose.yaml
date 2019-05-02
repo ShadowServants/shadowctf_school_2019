@@ -1,0 +1,16 @@
+version: '2'
+services:
+  init:
+    build: .
+    depends_on:
+      - redis
+    command: "python /app/init_task.py"
+  server:
+    build: .
+    command: "gunicorn --worker-class gevent --worker-connections 768 --bind 0.0.0.0:5000 app:app"
+    depends_on:
+      - init
+    ports:
+      - 127.0.0.1:5556:5000
+  redis:
+    image: redis:alpine
