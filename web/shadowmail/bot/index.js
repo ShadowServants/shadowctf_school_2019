@@ -113,6 +113,7 @@ start = async () => {
     dns.lookup(HOST, async (err, result) => {
         ip = result;
         let bot = new Bot(logger, MAX_XHR_REQUESTS);
+        bot.addToBlacklist('logout');
         await bot.initBrowser();
         await checkSignUp(bot);
         while (true) {
