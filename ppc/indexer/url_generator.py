@@ -22,7 +22,7 @@ def generate_one_file(level, count_levels=500):
     correct = generate_right_link(level)
     urls = ['' for _ in range(count_levels)]
     for i in range(count_levels):
-        urls[i] = generate_one_word()
+        urls[i] = '<a href="/' + generate_one_word() + '">heh</a>'
     urls.append(correct)
     random.shuffle(urls)
     random.shuffle(urls)  # for more shuffling

@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-RUN apk update && apk add --no-cache curl bash gcc musl-dev zlib-dev
+RUN apk update && apk add --no-cache gcc musl-dev zlib-dev
 RUN pip3 install flask gunicorn gevent
 ADD . /code
 WORKDIR /code
