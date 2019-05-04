@@ -13,7 +13,12 @@ class Bot {
         this.strictNavigation = false;
         this.postData = null;
         this.postHeaders = null;
+        this.blacklist = [];
         this.gotoOptions = {waitUntil: 'load', timeout: 3000};
+    }
+
+    addToBlacklist(value) {
+        this.blacklist.push(value);
     }
 
     async initBrowser() {
@@ -27,6 +32,15 @@ class Bot {
     requestInterceptor(request) {
         let data = {};
         this.logger.info(`Requesting: ${request.url()}, navigation = ${request.isNavigationRequest()}, resource = ${request.resourceType()}`);
+
+        for (let part of this.blacklist) {
+            if (request.url().toLowerCase().indexOf(part.toLowerCase()) >= 0) {
+                this.logger.warn(`Found blacklisted pattern: '${part}', aborting`);
+                request.abort();
+                return;
+            }
+        }
+
         if (this.postData) {
             this.logger.info('Adding POST payload');
             const headers = Object.assign({}, request.headers(), this.postHeaders || {});
