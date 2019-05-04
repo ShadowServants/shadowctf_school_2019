@@ -41,6 +41,8 @@ def index():
     if not user:
         return redirect('/login')
     if request.method == 'POST':
+        if user == 'admin':
+            return "Sorry. Admin cant change secret"
         secret = request.form.get('secret')
         redis_client.hset('secrets', user, secret)
         return redirect("/")
@@ -58,8 +60,8 @@ def login():
         password = request.form.get('password')
         if not (login and password):
             return "Введи логин и пароль"
-        password = redis_client.hget('passwords', login)
-        if password and password == password:
+        r_password = redis_client.hget('passwords', login)
+        if r_password and password == r_password.decode('utf-8'):
             sess = generate_session({'user': login})
             resp = make_response(redirect('/'))
             resp.set_cookie('secure_session', sess)
