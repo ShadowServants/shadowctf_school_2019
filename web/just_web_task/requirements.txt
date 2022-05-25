@@ -2,4 +2,4 @@ Flask==1.0.2
 gevent==1.4.0
 gunicorn==19.9.0
 redis==3.2.0
-PyJWT==1.7.1
+PyJWT==2.4.0
