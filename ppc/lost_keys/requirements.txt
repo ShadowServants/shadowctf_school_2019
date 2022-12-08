@@ -1,4 +1,4 @@
-certifi==2019.3.9
+certifi==2022.12.7
 gmpy2==2.0.8
 pycrypto==2.6.1
 timeout-decorator==0.4.1
